@@ -1,3 +1,3 @@
 Just kidding with NLP :P
 
-thids is my copy
+this is my copy

@@ -8,10 +8,9 @@ class Article:
     """Retrieves and analyzes wikipedia articles"""
 
     def __init__(self, title):
-	self = 'Hi, I am trying install Discourse for days (firstly I tried on virtual machine (VirtualBox)) and I am trying to successfully install it and run but cannot. I am getting now error probably from Docker.Error response from daemon manifest for discours not found.I have no idea why, I have fresh machine after format, new system debian jessie, new installation of docker and discourse downloaded a few minutes ago. I googled this error but nothing found. I think this is something wrong with Docker but I am not sure that is why I am asking'
-        self.page = wikipedia.page(title)
-        #print(self.page)
-        self.summary = 'Hi, I am trying install Discourse for days (firstly I tried on virtual machine (VirtualBox)) and I am trying to successfully install it and run but cannot. I am getting now error probably from Docker.Error response from daemon manifest for discours not found.I have no idea why, I have fresh machine after format, new system debian jessie, new installation of docker and discourse downloaded a few minutes ago. I googled this error but nothing found. I think this is something wrong with Docker but I am not sure that is why I am asking' #TextBlob(self.page.summary)
+	    self.page = wikipedia.page(title)
+        print(page)
+        self.summary = TextBlob(self.page.summary)
         #print(self.summary)
 
     def generate_trivia_sentences(self):

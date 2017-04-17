@@ -9,7 +9,7 @@ class Article:
 
     def __init__(self, title):
         self.page = wikipedia.page(title)
-        print("Hello World")
+        print(self.page)
         self.summary = TextBlob(self.page.summary)
         #print(self.summary)
 

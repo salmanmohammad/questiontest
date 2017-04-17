@@ -8,7 +8,7 @@ class Article:
     """Retrieves and analyzes wikipedia articles"""
 
     def __init__(self, title):
-        self.page = wikipedia.page(title)
+        #self.page = wikipedia.page(title)
         #print(self.page)
         #self.summary = TextBlob(self.page.summary)
         self.summary = TextBlob(title)

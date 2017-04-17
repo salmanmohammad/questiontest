@@ -28,9 +28,9 @@ def generate_trivia(titles, output):
 
     # Retrieve the trivia sentences
     questions = []
-    for article in titles:
-        click.echo('Analyzing \'{0}\''.format(article))
-        article = Article(title=article)
+    #for article in titles:
+        click.echo('Analyzing \'{0}\''.format(titles))
+        article = Article(title=titles)
         questions = questions + article.generate_trivia_sentences()
 
     # Output to stdout or JSON

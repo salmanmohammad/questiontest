@@ -11,7 +11,7 @@ class Article:
 	    self.page = wikipedia.page(title)
         #print(self)
         self.summary = TextBlob(self.page.summary)
-        print(self.summary)
+        print(self.page.summary)
 
     def generate_trivia_sentences(self):
         sentences = self.summary.sentences
